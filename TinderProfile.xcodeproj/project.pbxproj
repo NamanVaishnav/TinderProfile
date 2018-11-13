@@ -12,6 +12,8 @@
 		109FD805219B56620019804B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 109FD803219B56620019804B /* Main.storyboard */; };
 		109FD807219B56640019804B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 109FD806219B56640019804B /* Assets.xcassets */; };
 		109FD80A219B56640019804B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 109FD808219B56640019804B /* LaunchScreen.storyboard */; };
+		109FD813219B57530019804B /* NVDraggableLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109FD812219B57530019804B /* NVDraggableLayout.swift */; };
+		109FD815219B57BC0019804B /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109FD814219B57BC0019804B /* CollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		109FD806219B56640019804B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		109FD809219B56640019804B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		109FD80B219B56640019804B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		109FD812219B57530019804B /* NVDraggableLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NVDraggableLayout.swift; sourceTree = "<group>"; };
+		109FD814219B57BC0019804B /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 		109FD7FE219B56620019804B /* TinderProfile */ = {
 			isa = PBXGroup;
 			children = (
+				109FD814219B57BC0019804B /* CollectionViewCell.swift */,
+				109FD811219B570D0019804B /* NVDraggableLayout */,
 				109FD7FF219B56620019804B /* AppDelegate.swift */,
 				109FD801219B56620019804B /* ViewController.swift */,
 				109FD803219B56620019804B /* Main.storyboard */,
@@ -62,6 +68,14 @@
 				109FD80B219B56640019804B /* Info.plist */,
 			);
 			path = TinderProfile;
+			sourceTree = "<group>";
+		};
+		109FD811219B570D0019804B /* NVDraggableLayout */ = {
+			isa = PBXGroup;
+			children = (
+				109FD812219B57530019804B /* NVDraggableLayout.swift */,
+			);
+			path = NVDraggableLayout;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +150,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				109FD802219B56620019804B /* ViewController.swift in Sources */,
+				109FD813219B57530019804B /* NVDraggableLayout.swift in Sources */,
+				109FD815219B57BC0019804B /* CollectionViewCell.swift in Sources */,
 				109FD800219B56620019804B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
