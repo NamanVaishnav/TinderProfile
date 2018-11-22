@@ -33,6 +33,7 @@ extension ViewController : UICollectionViewDelegateFlowLayout , UICollectionView
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionViewCell", for: indexPath) as! CollectionViewCell
         
         cell.imgView.image = str_arr[indexPath.row]
+        cell.btnCount.setTitle("\(indexPath.row)", for: .normal)
         return cell
     }
     
@@ -47,4 +48,19 @@ extension ViewController : UICollectionViewDelegateFlowLayout , UICollectionView
         print(str_arr)
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print(indexPath)
+    }
+    
+}
+
+extension ViewController : VVSDraggableCellDelegate {
+    func cellDidMove(fromIndex: NSIndexPath, toIndex: NSIndexPath) {
+        print("\(fromIndex) \n \(toIndex)" )
+        let fromCell = self.dragReorderCollectionView.cellForItem(at: fromIndex as IndexPath) as! CollectionViewCell
+        fromCell.btnCount.setTitle("\(fromIndex.row)", for: .normal)
+        
+        let toCell = self.dragReorderCollectionView.cellForItem(at: toIndex as IndexPath) as! CollectionViewCell
+        toCell.btnCount.setTitle("\(toIndex.row)", for: .normal)
+    }
 }

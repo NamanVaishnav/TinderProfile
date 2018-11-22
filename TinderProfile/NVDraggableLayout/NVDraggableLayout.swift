@@ -246,6 +246,12 @@ class NVDraggableLayout: UICollectionViewFlowLayout, UIGestureRecognizerDelegate
                         }
                         self.collectionView!.moveItem(at: draggedCell!.currentIndexPath as IndexPath, to: indexPath as IndexPath)
                         self.draggedCell!.currentIndexPath = indexPath
+                        let cell = self.collectionView?.cellForItem(at: indexPath as IndexPath) as! CollectionViewCell
+//                        let cell2 = self.collectionView?.cellForItem(at: draggedCell.so)
+                        cell.btnCount.setTitle("\(indexPath.row)", for: .normal)
+                        
+                        
+                        
                     }
                     
                 }

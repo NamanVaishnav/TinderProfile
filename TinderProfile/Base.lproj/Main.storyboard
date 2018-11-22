@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Emh-az-895">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Emh-az-895">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -27,7 +27,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollectionViewCell" id="Fm5-xS-tkz" customClass="CollectionViewCell" customModule="VVSDragOrderLayout" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollectionViewCell" id="Fm5-xS-tkz" customClass="CollectionViewCell" customModule="TinderProfile" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="108" height="132"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -37,16 +37,25 @@
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bCR-QD-cfl">
                                                     <rect key="frame" x="4" y="4" width="100" height="124"/>
                                                 </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IUx-tl-mz1">
+                                                    <rect key="frame" x="54" y="94" width="46" height="30"/>
+                                                    <state key="normal" title="Button">
+                                                        <color key="titleColor" red="0.85043728350000003" green="0.21816034619999999" blue="0.15920260550000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                </button>
                                             </subviews>
                                         </view>
                                         <color key="backgroundColor" red="0.67455112930000005" green="0.15692374110000001" blue="0.10914970929999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstItem="bCR-QD-cfl" firstAttribute="top" secondItem="Fm5-xS-tkz" secondAttribute="top" constant="4" id="40B-BR-QPG"/>
                                             <constraint firstItem="bCR-QD-cfl" firstAttribute="leading" secondItem="Fm5-xS-tkz" secondAttribute="leading" constant="4" id="43z-CW-yfI"/>
+                                            <constraint firstItem="IUx-tl-mz1" firstAttribute="bottom" secondItem="Fm5-xS-tkz" secondAttribute="bottomMargin" id="ANW-3x-Qou"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="IUx-tl-mz1" secondAttribute="trailing" id="At2-Wv-MBQ"/>
                                             <constraint firstAttribute="trailing" secondItem="bCR-QD-cfl" secondAttribute="trailing" constant="4" id="El0-DF-lPZ"/>
                                             <constraint firstAttribute="bottom" secondItem="bCR-QD-cfl" secondAttribute="bottom" constant="4" id="o1V-43-iEY"/>
                                         </constraints>
                                         <connections>
+                                            <outlet property="btnCount" destination="IUx-tl-mz1" id="W3O-FT-Kcp"/>
                                             <outlet property="imgView" destination="bCR-QD-cfl" id="Ylo-qV-70W"/>
                                         </connections>
                                     </collectionViewCell>
