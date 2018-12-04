@@ -1,66 +1,117 @@
 //
-//  ViewController.swift
-//  TinderProfile
+//  SampleCardStackController.swift
+//  MGSwipeCards
 //
-//  Created by naman vaishnav on 14/11/18.
-//  Copyright © 2018 naman vaishnav. All rights reserved.
+//  Created by Mac Gallagher on 5/28/18.
+//  Copyright © 2018 Mac Gallagher. All rights reserved.
 //
 
 import UIKit
+import MGSwipeCards
+//import PopBounceButton
+
+//MARK: - ViewController
 
 class ViewController: UIViewController {
+//    @IBOutlet var cardStack: MGCardStackView!
+    let cardStack = MGCardStackView()
+//    let buttonStackView = ButtonStackView()
     
-    var str_arr = [#imageLiteral(resourceName: "Gloves6"),#imageLiteral(resourceName: "Gloves3"),#imageLiteral(resourceName: "Gloves4"),#imageLiteral(resourceName: "Gloves2"),#imageLiteral(resourceName: "Gloves1"),#imageLiteral(resourceName: "Gloves5")]
-    
-    @IBOutlet weak var dragReorderCollectionView: UICollectionView!
-    let dragReorderLayout = NVDraggableLayout()
+    @IBOutlet weak var container: UIView!
+    private let cardModels: [SampleCardModel] = [
+        SampleCardModel(name: "Michelle", age: 26, occupation: "Graphic Designer", image: UIImage(named: "michelle")),
+        SampleCardModel(name: "Joshua", age: 27, occupation: "Business Services Sales Representative", image: UIImage(named: "joshua")),
+        SampleCardModel(name: "Julian", age: 25, occupation: "Model/Photographer", image: UIImage(named: "julian")),
+        SampleCardModel(name: "Bailey", age: 25, occupation: "Software Engineer", image: UIImage(named: "bailey")),
+        SampleCardModel(name: "Rachel", age: 27, occupation: "Interior Designer", image: UIImage(named: "rachel"))
+    ]
     
     override func viewDidLoad() {
-        super.viewDidLoad()
-        dragReorderCollectionView.setCollectionViewLayout(dragReorderLayout, animated: false)
-        //        dragReorderLayout.setupPlaceHoldersInView(view: holderView)
         
+//        buttonStackView.delegate = self
+//        setupUI()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        self.container.addSubview(cardStack)
+        cardStack.frame = CGRect(x: 0, y: 0, width:container.frame.width , height: container.frame.height)
+        cardStack.dataSource = self
+        cardStack.delegate = self
+    }
+    
+    @objc func handleShift(_ sender: UIButton) {
+        if sender.tag == 1 {
+            cardStack.shift(withDistance: -1, animated: true)
+        } else {
+            cardStack.shift(animated: true)
+        }
+    }
 }
 
-extension ViewController : UICollectionViewDelegateFlowLayout , UICollectionViewDelegate , UICollectionViewDataSource {
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return str_arr.count
+//MARK: - MGCardStackViewDataSource
+
+extension ViewController: MGCardStackViewDataSource {
+    func cardStack(_ cardStack: MGCardStackView, cardForIndexAt index: Int) -> MGSwipeCard {
+        return SampleCard(model: cardModels[index])
     }
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionViewCell", for: indexPath) as! CollectionViewCell
-        
-        cell.imgView.image = str_arr[indexPath.row]
-        cell.btnCount.setTitle("\(indexPath.row)", for: .normal)
-        return cell
+    func numberOfCards(in cardStack: MGCardStackView) -> Int {
+        return cardModels.count
     }
-    
-    
-    func collectionView(_ collectionView: UICollectionView, canMoveItemAt indexPath: IndexPath) -> Bool {
-        return true
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, moveItemAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
-        let item = str_arr.remove(at: sourceIndexPath.item)
-        str_arr.insert(item, at: destinationIndexPath.item)
-        print(str_arr)
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print(indexPath)
-    }
-    
 }
 
-extension ViewController : VVSDraggableCellDelegate {
-    func cellDidMove(fromIndex: NSIndexPath, toIndex: NSIndexPath) {
-        print("\(fromIndex) \n \(toIndex)" )
-        let fromCell = self.dragReorderCollectionView.cellForItem(at: fromIndex as IndexPath) as! CollectionViewCell
-        fromCell.btnCount.setTitle("\(fromIndex.row)", for: .normal)
-        
-        let toCell = self.dragReorderCollectionView.cellForItem(at: toIndex as IndexPath) as! CollectionViewCell
-        toCell.btnCount.setTitle("\(toIndex.row)", for: .normal)
+//MARK: - MGCardStackViewDelegate
+
+extension ViewController: MGCardStackViewDelegate {
+    func didSwipeAllCards(_ cardStack: MGCardStackView) {
+        print("Swiped all cards!")
+    }
+    
+    func cardStack(_ cardStack: MGCardStackView, didUndoCardAt index: Int, from direction: SwipeDirection) {
+        print("Undo \(direction) swipe on \(cardModels[index].name)")
+    }
+    
+    func cardStack(_ cardStack: MGCardStackView, didSwipeCardAt index: Int, with direction: SwipeDirection) {
+        print("Swiped \(direction) on \(cardModels[index].name)")
+    }
+    
+    func cardStack(_ cardStack: MGCardStackView, didSelectCardAt index: Int, tapCorner: UIRectCorner) {
+        var cornerString: String
+        switch tapCorner {
+        case .topLeft:
+            cornerString = "top left"
+        case .topRight:
+            cornerString = "top right"
+        case .bottomRight:
+            cornerString = "bottom right"
+        case .bottomLeft:
+            cornerString = "bottom left"
+        default:
+            cornerString = ""
+        }
+        print("Card tapped at \(cornerString)")
     }
 }
+
+//MARK - ButtonStackViewDelegate
+
+//extension ViewController: ButtonStackViewDelegate {
+//    func didTapUndo() {
+//        cardStack.undoLastSwipe()
+//    }
+//
+//    func didTapPass() {
+//        cardStack.swipe(.left)
+//    }
+//
+//    func didTapSuperLike() {
+//        cardStack.swipe(.up)
+//    }
+//
+//    func didTapLike() {
+//        cardStack.swipe(.right)
+//    }
+//
+//    func didTapBoost() { }
+//}

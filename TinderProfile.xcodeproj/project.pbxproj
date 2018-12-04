@@ -7,25 +7,51 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1022475421B6F0C900EF21DD /* SampleCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1022474F21B6F0C900EF21DD /* SampleCard.swift */; };
+		1022475521B6F0C900EF21DD /* SampleCardContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1022475021B6F0C900EF21DD /* SampleCardContentView.swift */; };
+		1022475621B6F0C900EF21DD /* SampleCardOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1022475121B6F0C900EF21DD /* SampleCardOverlay.swift */; };
+		1022475721B6F0C900EF21DD /* SampleCardFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1022475221B6F0C900EF21DD /* SampleCardFooterView.swift */; };
+		1022475821B6F0C900EF21DD /* SampleCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1022475321B6F0C900EF21DD /* SampleCardModel.swift */; };
+		1022475A21B6F12200EF21DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1022475921B6F12200EF21DD /* ViewController.swift */; };
+		1022475C21B6F24B00EF21DD /* UIView+Anchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1022475B21B6F24B00EF21DD /* UIView+Anchor.swift */; };
+		10288FF821AC6940006D268B /* LottieButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10288FF721AC6940006D268B /* LottieButton.swift */; };
+		10288FFA21AC6A28006D268B /* TwitterHeart.json in Resources */ = {isa = PBXBuildFile; fileRef = 10288FF921AC6A28006D268B /* TwitterHeart.json */; };
+		104CE82E21A7378800AC9C36 /* CardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104CE82D21A7378800AC9C36 /* CardVC.swift */; };
+		104CE83221A7390F00AC9C36 /* SampleCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 104CE83121A7390F00AC9C36 /* SampleCard.xib */; };
 		109FD800219B56620019804B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109FD7FF219B56620019804B /* AppDelegate.swift */; };
-		109FD802219B56620019804B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109FD801219B56620019804B /* ViewController.swift */; };
+		109FD802219B56620019804B /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109FD801219B56620019804B /* HomeVC.swift */; };
 		109FD805219B56620019804B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 109FD803219B56620019804B /* Main.storyboard */; };
 		109FD807219B56640019804B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 109FD806219B56640019804B /* Assets.xcassets */; };
 		109FD80A219B56640019804B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 109FD808219B56640019804B /* LaunchScreen.storyboard */; };
 		109FD813219B57530019804B /* NVDraggableLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109FD812219B57530019804B /* NVDraggableLayout.swift */; };
 		109FD815219B57BC0019804B /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109FD814219B57BC0019804B /* CollectionViewCell.swift */; };
+		6969784A5F0B32DB1E511900 /* Pods_TinderProfile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F30902EC6FA2817B5FF1FEE6 /* Pods_TinderProfile.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1022474F21B6F0C900EF21DD /* SampleCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleCard.swift; sourceTree = "<group>"; };
+		1022475021B6F0C900EF21DD /* SampleCardContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleCardContentView.swift; sourceTree = "<group>"; };
+		1022475121B6F0C900EF21DD /* SampleCardOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleCardOverlay.swift; sourceTree = "<group>"; };
+		1022475221B6F0C900EF21DD /* SampleCardFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleCardFooterView.swift; sourceTree = "<group>"; };
+		1022475321B6F0C900EF21DD /* SampleCardModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleCardModel.swift; sourceTree = "<group>"; };
+		1022475921B6F12200EF21DD /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1022475B21B6F24B00EF21DD /* UIView+Anchor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Anchor.swift"; sourceTree = "<group>"; };
+		10288FF721AC6940006D268B /* LottieButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieButton.swift; sourceTree = "<group>"; };
+		10288FF921AC6A28006D268B /* TwitterHeart.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TwitterHeart.json; sourceTree = "<group>"; };
+		104CE82D21A7378800AC9C36 /* CardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardVC.swift; sourceTree = "<group>"; };
+		104CE83121A7390F00AC9C36 /* SampleCard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SampleCard.xib; sourceTree = "<group>"; };
 		109FD7FC219B56620019804B /* TinderProfile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TinderProfile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		109FD7FF219B56620019804B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		109FD801219B56620019804B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		109FD801219B56620019804B /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		109FD804219B56620019804B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		109FD806219B56640019804B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		109FD809219B56640019804B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		109FD80B219B56640019804B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		109FD812219B57530019804B /* NVDraggableLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NVDraggableLayout.swift; sourceTree = "<group>"; };
 		109FD814219B57BC0019804B /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		42E1003E526DEB184D50432B /* Pods-TinderProfile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinderProfile.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TinderProfile/Pods-TinderProfile.debug.xcconfig"; sourceTree = "<group>"; };
+		DAC088E26C34DF8314B27014 /* Pods-TinderProfile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinderProfile.release.xcconfig"; path = "Pods/Target Support Files/Pods-TinderProfile/Pods-TinderProfile.release.xcconfig"; sourceTree = "<group>"; };
+		F30902EC6FA2817B5FF1FEE6 /* Pods_TinderProfile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TinderProfile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +59,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6969784A5F0B32DB1E511900 /* Pods_TinderProfile.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1022474E21B6F0C900EF21DD /* SampleCard */ = {
+			isa = PBXGroup;
+			children = (
+				1022475B21B6F24B00EF21DD /* UIView+Anchor.swift */,
+				1022474F21B6F0C900EF21DD /* SampleCard.swift */,
+				1022475021B6F0C900EF21DD /* SampleCardContentView.swift */,
+				1022475121B6F0C900EF21DD /* SampleCardOverlay.swift */,
+				1022475221B6F0C900EF21DD /* SampleCardFooterView.swift */,
+				1022475321B6F0C900EF21DD /* SampleCardModel.swift */,
+			);
+			path = SampleCard;
+			sourceTree = "<group>";
+		};
+		10288FF621AC692A006D268B /* LottieButton */ = {
+			isa = PBXGroup;
+			children = (
+				10288FF721AC6940006D268B /* LottieButton.swift */,
+			);
+			path = LottieButton;
+			sourceTree = "<group>";
+		};
 		109FD7F3219B56620019804B = {
 			isa = PBXGroup;
 			children = (
 				109FD7FE219B56620019804B /* TinderProfile */,
 				109FD7FD219B56620019804B /* Products */,
+				2450341F77B7F4B37337F6F4 /* Pods */,
+				80B6B95EBB40C44A7559F349 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,14 +108,20 @@
 		109FD7FE219B56620019804B /* TinderProfile */ = {
 			isa = PBXGroup;
 			children = (
+				10288FF921AC6A28006D268B /* TwitterHeart.json */,
+				1022475921B6F12200EF21DD /* ViewController.swift */,
+				1022474E21B6F0C900EF21DD /* SampleCard */,
+				10288FF621AC692A006D268B /* LottieButton */,
 				109FD814219B57BC0019804B /* CollectionViewCell.swift */,
 				109FD811219B570D0019804B /* NVDraggableLayout */,
 				109FD7FF219B56620019804B /* AppDelegate.swift */,
-				109FD801219B56620019804B /* ViewController.swift */,
+				109FD801219B56620019804B /* HomeVC.swift */,
 				109FD803219B56620019804B /* Main.storyboard */,
 				109FD806219B56640019804B /* Assets.xcassets */,
 				109FD808219B56640019804B /* LaunchScreen.storyboard */,
 				109FD80B219B56640019804B /* Info.plist */,
+				104CE82D21A7378800AC9C36 /* CardVC.swift */,
+				104CE83121A7390F00AC9C36 /* SampleCard.xib */,
 			);
 			path = TinderProfile;
 			sourceTree = "<group>";
@@ -78,6 +134,23 @@
 			path = NVDraggableLayout;
 			sourceTree = "<group>";
 		};
+		2450341F77B7F4B37337F6F4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				42E1003E526DEB184D50432B /* Pods-TinderProfile.debug.xcconfig */,
+				DAC088E26C34DF8314B27014 /* Pods-TinderProfile.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		80B6B95EBB40C44A7559F349 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F30902EC6FA2817B5FF1FEE6 /* Pods_TinderProfile.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -85,9 +158,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 109FD80E219B56640019804B /* Build configuration list for PBXNativeTarget "TinderProfile" */;
 			buildPhases = (
+				B5A075DB54778DD0586D9510 /* [CP] Check Pods Manifest.lock */,
 				109FD7F8219B56620019804B /* Sources */,
 				109FD7F9219B56620019804B /* Frameworks */,
 				109FD7FA219B56620019804B /* Resources */,
+				30D31015D844638E9BC9EF92 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -138,21 +213,85 @@
 			files = (
 				109FD80A219B56640019804B /* LaunchScreen.storyboard in Resources */,
 				109FD807219B56640019804B /* Assets.xcassets in Resources */,
+				10288FFA21AC6A28006D268B /* TwitterHeart.json in Resources */,
 				109FD805219B56620019804B /* Main.storyboard in Resources */,
+				104CE83221A7390F00AC9C36 /* SampleCard.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		30D31015D844638E9BC9EF92 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TinderProfile/Pods-TinderProfile-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MGSwipeCards/MGSwipeCards.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
+				"${BUILT_PRODUCTS_DIR}/pop/pop.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MGSwipeCards.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/pop.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TinderProfile/Pods-TinderProfile-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5A075DB54778DD0586D9510 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TinderProfile-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		109FD7F8219B56620019804B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				109FD802219B56620019804B /* ViewController.swift in Sources */,
+				1022475521B6F0C900EF21DD /* SampleCardContentView.swift in Sources */,
+				1022475621B6F0C900EF21DD /* SampleCardOverlay.swift in Sources */,
+				109FD802219B56620019804B /* HomeVC.swift in Sources */,
 				109FD813219B57530019804B /* NVDraggableLayout.swift in Sources */,
 				109FD815219B57BC0019804B /* CollectionViewCell.swift in Sources */,
+				1022475721B6F0C900EF21DD /* SampleCardFooterView.swift in Sources */,
+				1022475A21B6F12200EF21DD /* ViewController.swift in Sources */,
 				109FD800219B56620019804B /* AppDelegate.swift in Sources */,
+				1022475C21B6F24B00EF21DD /* UIView+Anchor.swift in Sources */,
+				1022475821B6F0C900EF21DD /* SampleCardModel.swift in Sources */,
+				10288FF821AC6940006D268B /* LottieButton.swift in Sources */,
+				1022475421B6F0C900EF21DD /* SampleCard.swift in Sources */,
+				104CE82E21A7378800AC9C36 /* CardVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,6 +435,7 @@
 		};
 		109FD80F219B56640019804B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42E1003E526DEB184D50432B /* Pods-TinderProfile.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -314,6 +454,7 @@
 		};
 		109FD810219B56640019804B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DAC088E26C34DF8314B27014 /* Pods-TinderProfile.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

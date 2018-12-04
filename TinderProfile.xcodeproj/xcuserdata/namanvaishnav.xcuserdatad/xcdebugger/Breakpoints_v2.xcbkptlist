@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TinderProfile/NVDraggableLayout/NVDraggableLayout.swift"
-            timestampString = "564602485.817916"
+            timestampString = "564948227.658323"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "245"
@@ -26,7 +26,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TinderProfile/NVDraggableLayout/NVDraggableLayout.swift"
-            timestampString = "564602485.81855"
+            timestampString = "564948227.658383"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "248"
@@ -42,12 +42,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TinderProfile/ViewController.swift"
-            timestampString = "564602485.818998"
+            timestampString = "565638721.731492"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "46"
-            endingLineNumber = "46"
-            landmarkName = "collectionView(_:moveItemAt:to:)"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "cardStack(_:cardForIndexAt:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -58,13 +58,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TinderProfile/ViewController.swift"
-            timestampString = "564602485.819331"
+            timestampString = "565638721.732047"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
-            landmarkName = "collectionView(_:canMoveItemAt:)"
-            landmarkType = "7">
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -74,12 +74,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TinderProfile/ViewController.swift"
-            timestampString = "564602485.819607"
+            timestampString = "565638721.732465"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "59"
-            endingLineNumber = "59"
-            landmarkName = "cellDidMove(fromIndex:toIndex:)"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
+            landmarkName = "didSwipeAllCards(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

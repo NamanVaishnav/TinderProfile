@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Emh-az-895">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YKY-fH-edi">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,9 +10,39 @@
     </dependencies>
     <scenes>
         <!--View Controller-->
+        <scene sceneID="u0G-sI-gVh">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" id="YKY-fH-edi" customClass="ViewController" customModule="TinderProfile" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="odH-QQ-CSz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iY9-72-JZe">
+                                <rect key="frame" x="20" y="40" width="335" height="607"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="5he-bQ-L1O" firstAttribute="trailing" secondItem="iY9-72-JZe" secondAttribute="trailing" constant="20" id="26z-Nm-w67"/>
+                            <constraint firstItem="iY9-72-JZe" firstAttribute="top" secondItem="5he-bQ-L1O" secondAttribute="top" constant="20" id="3sa-bM-wCo"/>
+                            <constraint firstItem="5he-bQ-L1O" firstAttribute="bottom" secondItem="iY9-72-JZe" secondAttribute="bottom" constant="20" id="jpI-vg-WgR"/>
+                            <constraint firstItem="iY9-72-JZe" firstAttribute="leading" secondItem="5he-bQ-L1O" secondAttribute="leading" constant="20" id="pqy-0N-iCX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5he-bQ-L1O"/>
+                    </view>
+                    <connections>
+                        <outlet property="container" destination="iY9-72-JZe" id="1BT-Xj-14J"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RTG-na-2Uk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="664.79999999999995" y="104.7976011994003"/>
+        </scene>
+        <!--HomeVC-->
         <scene sceneID="oQQ-kl-NLV">
             <objects>
-                <viewController id="Emh-az-895" customClass="ViewController" customModule="TinderProfile" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Emh-az-895" customClass="HomeVC" customModule="TinderProfile" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="stf-Lw-zKa">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -81,7 +111,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u4Q-QK-7Zm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1610" y="139"/>
+            <point key="canvasLocation" x="1431" y="105"/>
         </scene>
     </scenes>
 </document>
