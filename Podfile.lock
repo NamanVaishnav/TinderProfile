@@ -1,0 +1,28 @@
+PODS:
+  - lottie-ios (2.5.2)
+  - MGSwipeCards (2.2.6):
+    - pop (~> 1.0)
+  - pop (1.0.12)
+  - SnapKit (4.2.0)
+
+DEPENDENCIES:
+  - lottie-ios
+  - MGSwipeCards
+  - SnapKit
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - lottie-ios
+    - MGSwipeCards
+    - pop
+    - SnapKit
+
+SPEC CHECKSUMS:
+  lottie-ios: 3fef45d3fabe63e3c7c2eb603dd64ddfffc73062
+  MGSwipeCards: f3f3f820881a3ebc283ae2bb956fd622fa9b3c46
+  pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+
+PODFILE CHECKSUM: f32b98da250458ba7eca88add16ada045a43bd7d
+
+COCOAPODS: 1.5.3
